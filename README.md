@@ -1,34 +1,34 @@
 # 3D Raid Boss
 
-A Unity portfolio prototype focused on a short, mechanics-heavy raid encounter. The public repository contains the gameplay code, scenes, tests, project settings, and a design document while intentionally excluding third-party visual-effect packs and local AI/editor integrations.
+這是一款使用 Unity 製作的作品集 Demo，內容聚焦於短時間、高機制密度的團隊副本王戰。此公開儲存庫包含遊戲程式、場景、測試、專案設定與設計文件，但不包含第三方特效素材包及本機使用的 AI／編輯器整合工具。
 
-## Highlights
+## 主要功能
 
-- Three-minute boss timeline with multiple encounter phases
-- Telegraph-before-damage arena mechanics and knockback interactions
-- Player skill system with cast time, GCD, stacks, charges, buffs, and cooldowns
-- HUD for HP, cast progress, GCD, skill state, incoming damage, and battle time
-- Battle records with damage breakdown, skill usage, incoming-damage source, and timestamps
-- Main menu, settings, pause, retry, victory, and defeat flows
-- EditMode tests for core combat and encounter behavior
+- 三分鐘、包含多個階段的 Boss 戰鬥時間軸
+- 先顯示攻擊預告、再進行傷害判定的場地機制，以及擊退互動
+- 包含讀條、GCD、疊層、充能、增益效果與冷卻時間的玩家技能系統
+- 顯示 HP、讀條進度、GCD、技能狀態、受傷資訊與戰鬥時間的 HUD
+- 記錄傷害分布、技能使用次數、受傷來源與時間點的戰鬥紀錄
+- 主選單、設定、暫停、重新挑戰、勝利與失敗流程
+- 驗證核心戰鬥與王戰機制的 EditMode 自動化測試
 
-## Open the project
+## 開啟專案
 
-- Unity Editor: `6000.4.11f1`
-- Open this repository root from Unity Hub.
-- Entry menu scene: `Assets/Scenes/MainMenu.unity`
-- Gameplay scene: `Assets/SampleScene.unity`
+- Unity 版本：`6000.4.11f1`
+- 從 Unity Hub 開啟此儲存庫的根目錄。
+- 主選單場景：`Assets/Scenes/MainMenu.unity`
+- 戰鬥場景：`Assets/SampleScene.unity`
 
-Unity will resolve the official packages listed in `Packages/manifest.json` on first open.
+第一次開啟時，Unity 會自動解析並安裝 `Packages/manifest.json` 中列出的官方套件。
 
-## Public-edition differences
+## 公開版差異
 
-The original private project uses an external particle pack for presentation. Those files, their generated examples, Coplay, Unity MCP, Unity AI Assistant, local caches, cloud project identifiers, and raw development history are intentionally omitted here. Core gameplay and telegraph visuals rely on project-owned code and Unity primitives.
+原始私人專案使用了外部粒子特效包。為避免重新散布第三方素材，此公開版未包含該素材包及其範例，也移除了 Coplay、Unity MCP、Unity AI Assistant、本機快取、Unity Cloud 專案識別碼與私人開發歷史。核心玩法及攻擊預告視覺仍可透過專案本身的程式與 Unity 基礎圖形運作。
 
-## Project ownership and AI assistance
+## 專案設計與 AI 協作
 
-The project owner defined the gameplay requirements, encounter timeline, skill rules, UI behavior, battle-record requirements, testing criteria, and iteration feedback. AI-assisted tools supported implementation and debugging. See `Docs/GameDesignDocument.txt` for the original gameplay specification.
+專案需求、王戰時間軸、技能規則、UI 行為、戰鬥紀錄需求、測試條件與迭代方向由專案製作者規劃；AI 輔助工具用於協助程式實作與除錯。原始玩法規格可參考 `Docs/GameDesignDocument.txt`。
 
-## License
+## 授權說明
 
-This repository is source-available for portfolio review. No permission is granted to copy, modify, or redistribute the project code except where a third-party notice states otherwise. See `LICENSE.md` and `THIRD_PARTY_NOTICES.md`.
+此儲存庫僅開放原始碼供作品集審閱，除第三方授權聲明另有規定外，不授權複製、修改或重新散布專案程式。詳細內容請參考 `LICENSE.md` 與 `THIRD_PARTY_NOTICES.md`。
